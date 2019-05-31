@@ -6,10 +6,12 @@
       This is the homepage of nyan_wiki
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
-    <h3>Why my mainTitle can not be loaded?</h3>
+    <h3>分类</h3>
     <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
+      <li><a href="https://www.bilibili.com" target="_blank" rel="noopener">ACGN</a></li>
+      <li><a href="https://www.hupu.com" target="_blank" rel="noopener">体育</a></li>
+      <li><a href="https://www.baidu.com">娱乐</a></li>
+      <li><a href="HelloWorld.vue">直播</a></li>
     </ul>
     <h3>Essential Links</h3>
     <ul>
@@ -56,7 +58,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 h1 {
-  margin: 40px 0 0;
+  margin: 10px 10px 0;
 }
 h3 {
   margin: 40px 0 0;
