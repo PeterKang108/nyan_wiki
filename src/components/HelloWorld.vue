@@ -10,7 +10,7 @@
     <ul>
       <li><a href="https://www.bilibili.com" target="_blank" rel="noopener">ACGN</a></li>
       <li><a href="https://www.hupu.com" target="_blank" rel="noopener">体育</a></li>
-      <li><a href="https://www.baidu.com">娱乐</a></li>
+      <li><a href="https://www.pornhub.com">娱乐</a></li>
       <li><a href="https://www.douyu.com/">直播</a></li>
     </ul>
     <h3>Essential Links</h3>
