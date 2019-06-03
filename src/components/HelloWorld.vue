@@ -3,7 +3,7 @@
   <div class="homepage" id="homepage">
     <h1>{{ mainTitle }}</h1>
     <p>
-      This is the homepage of nyan_wiki
+      梗百科
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
     <h3>分类</h3>
@@ -13,7 +13,7 @@
       <li><a href="https://www.pornhub.com">娱乐</a></li>
       <li><a href="https://www.douyu.com/">直播</a></li>
     </ul>
-    <h3>Essential Links</h3>
+    <h3>UI设计进行中</h3>
     <ul>
       <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
       <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
@@ -21,7 +21,7 @@
       <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
       <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
     </ul>
-    <h3>Ecosystem</h3>
+    <h3>表情包制作器</h3>
     <ul>
       <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
       <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
@@ -35,6 +35,13 @@
       </label>
     </ul>
     <h4>{{testInput}}</h4>
+    <span>总价：{{ total }}</span>
+    <ul>
+      <li v-for="item in shoppingList">
+        <span>{{ item.item }}</span>
+      </li>
+    </ul>
+    <Button @click="addItem">添加</Button>
   </div>
 </template>
 
@@ -46,8 +53,35 @@ export default {
     return{
       mainTitle:"Nyan Wiki",
       testInput:"",
+      shoppingList: [
+        {
+          item: 'xxx',
+          price: 20
+        },{
+          item: 'YYY',
+          price: 30
+        }
+      ]
     }
-  }
+  },
+  computed: {
+    total () {
+      // return Math.sum(..._.map(this.shoppingList, 'price'));
+      let total = 0;
+      for (let item of this.shoppingList) {
+        total += item.price;
+      }
+      return total;
+    }
+  },
+  methods: {
+    addItem () {
+      this.shoppingList.push({item: 'zzz', price: 40});
+    }
+  },
+  mounted() {
+  },
+  watch: {}
 
 }
 
